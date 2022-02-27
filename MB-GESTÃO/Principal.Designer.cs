@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frprincipal));
             this.SuspendLayout();
             // 
             // Frprincipal
@@ -35,8 +36,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1146, 617);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frprincipal";
-            this.Text = "Principal";
+            this.Text = "MB-GESTÃO";
             this.ResumeLayout(false);
 
         }
