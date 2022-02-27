@@ -48,5 +48,14 @@ namespace MB_GESTÃO
             Frprincipal frprincipal = new Frprincipal();
             frprincipal.ShowDialog();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            if(TextBox_username.Text=="MBSF" && TextBox_password.Text=="123456")
+            {
+                Frprincipal ds = new Frprincipal();
+                ds.Show();
+            }
+        }
     }
 }
