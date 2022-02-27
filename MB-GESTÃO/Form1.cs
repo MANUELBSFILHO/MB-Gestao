@@ -42,5 +42,11 @@ namespace MB_GESTÃO
             //Agora precisamos nos conectar ao banco de dados, então usamos o banco de dados mysql
             //OK, primeiro precisamos baixar o aplicativo xampp e o conector mysql
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Frprincipal frprincipal = new Frprincipal();
+            frprincipal.ShowDialog();
+        }
     }
 }

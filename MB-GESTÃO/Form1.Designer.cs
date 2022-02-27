@@ -36,6 +36,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button_login = new System.Windows.Forms.Button();
             this.label_exit = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -63,7 +64,7 @@
             this.TextBox_username.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox_username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox_username.Location = new System.Drawing.Point(63, 255);
-            this.TextBox_username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox_username.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_username.Name = "TextBox_username";
             this.TextBox_username.PasswordChar = '\0';
             this.TextBox_username.PlaceholderText = "";
@@ -83,7 +84,7 @@
             this.TextBox_password.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBox_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBox_password.Location = new System.Drawing.Point(63, 340);
-            this.TextBox_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox_password.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_password.Name = "TextBox_password";
             this.TextBox_password.PasswordChar = '●';
             this.TextBox_password.PlaceholderText = "";
@@ -120,8 +121,9 @@
             this.button_login.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button_login.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_login.Location = new System.Drawing.Point(25, 441);
-            this.button_login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_login.Margin = new System.Windows.Forms.Padding(4);
             this.button_login.Name = "button_login";
+            this.button_login.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button_login.Size = new System.Drawing.Size(329, 44);
             this.button_login.TabIndex = 2;
             this.button_login.Text = "Login";
@@ -142,12 +144,26 @@
             this.label_exit.MouseEnter += new System.EventHandler(this.label_exit_MouseEnter);
             this.label_exit.MouseLeave += new System.EventHandler(this.label_exit_MouseLeave);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(101, 529);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(179, 24);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Continuar sem login";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(380, 650);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label_exit);
             this.Controls.Add(this.button_login);
             this.Controls.Add(this.TextBox_password);
@@ -159,7 +175,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.LoginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -178,6 +194,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button_login;
         private System.Windows.Forms.Label label_exit;
+        private System.Windows.Forms.Label label1;
     }
 }
 
