@@ -16,5 +16,10 @@ namespace MB_GESTÃO
         {
             InitializeComponent();
         }
+
+        private void sAIRToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
