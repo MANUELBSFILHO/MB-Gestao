@@ -21,5 +21,11 @@ namespace MB_GESTÃO
         {
             Application.Exit();
         }
+
+        private void clieteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frcliente frcliente = new Frcliente();
+            frcliente.Show();
+        }
     }
 }

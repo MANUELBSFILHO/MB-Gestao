@@ -31,13 +31,12 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frprincipal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.qRCodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.sAIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cadastroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.clieteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.qRCodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sAIRToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +55,21 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // cadastroToolStripMenuItem
+            // 
+            this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clieteToolStripMenuItem});
+            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
+            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
+            this.cadastroToolStripMenuItem.Text = "Cadastro";
+            // 
+            // clieteToolStripMenuItem
+            // 
+            this.clieteToolStripMenuItem.Name = "clieteToolStripMenuItem";
+            this.clieteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.clieteToolStripMenuItem.Text = "CLIENTE";
+            this.clieteToolStripMenuItem.Click += new System.EventHandler(this.clieteToolStripMenuItem_Click);
+            // 
             // qRCodeToolStripMenuItem
             // 
             this.qRCodeToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
@@ -70,14 +84,6 @@
             this.sAIRToolStripMenuItem.Text = "SAIR";
             this.sAIRToolStripMenuItem.Click += new System.EventHandler(this.sAIRToolStripMenuItem_Click);
             // 
-            // cadastroToolStripMenuItem
-            // 
-            this.cadastroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.clieteToolStripMenuItem});
-            this.cadastroToolStripMenuItem.Name = "cadastroToolStripMenuItem";
-            this.cadastroToolStripMenuItem.Size = new System.Drawing.Size(82, 24);
-            this.cadastroToolStripMenuItem.Text = "Cadastro";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -88,26 +94,12 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(341, 502);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(8, 28);
-            this.dateTimePicker1.TabIndex = 2;
-            // 
-            // clieteToolStripMenuItem
-            // 
-            this.clieteToolStripMenuItem.Name = "clieteToolStripMenuItem";
-            this.clieteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.clieteToolStripMenuItem.Text = "CLIENTE";
-            // 
             // Frprincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1289, 810);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -136,7 +128,6 @@
         private System.Windows.Forms.ToolStripMenuItem sAIRToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cadastroToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ToolStripMenuItem clieteToolStripMenuItem;
     }
 }
